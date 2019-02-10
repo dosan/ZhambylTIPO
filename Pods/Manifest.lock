@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.7.3)
+  - EasyPeasy (1.7.0)
+  - FSCalendar (2.8.0)
+  - ObjectMapper (3.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - EasyPeasy
+  - FSCalendar
+  - ObjectMapper
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - EasyPeasy
+    - FSCalendar
+    - ObjectMapper
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+
+PODFILE CHECKSUM: 91ececb81e1a9dd43bb433a80cbe6e36eeeda602
+
+COCOAPODS: 1.5.2
