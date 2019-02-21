@@ -95,18 +95,20 @@ class LogInView: UIView {
     logInButton.addSubview(logInIndicator)
   }
   
+
   fileprivate func setupConstraints() {
     logo.easy.layout(CenterX(0),
-                     Bottom(60.heightProportion()).to(loginField),
-                     Top(60.heightProportion()))
-    loginField.easy.layout(Width(300.widthProportion()),
-                           Height(70.heightProportion()),
-                           Center(0))
-    passwordField.easy.layout(Top(10.heightProportion()).to(loginField),
+                     Top(60.heightProportion()),
+                     Height(100.heightProportion()))
+    loginField.easy.layout(Top(30.heightProportion()).to(logo),
+                           Width(300.widthProportion()),
+                           Height(50.heightProportion()),
+                           CenterX(0))
+    passwordField.easy.layout(Top(5.heightProportion()).to(loginField),
                               Width().like(loginField),
                               Height().like(loginField),
                               CenterX(0))
-    logInButton.easy.layout(Top(40.heightProportion()).to(passwordField),
+    logInButton.easy.layout(Top(20.heightProportion()).to(passwordField),
                             CenterX(0),
                             Width().like(loginField),
                             Height().like(loginField))

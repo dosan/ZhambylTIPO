@@ -14,17 +14,12 @@ class LogInViewController: UIViewController {
   lazy var loginView: LogInView = {
     let loginView = LogInView()
     loginView.logInButton.addTarget(self, action: #selector(logIn), for: .touchUpInside)
-    loginView.loginField.text = "910906356163"
-    loginView.passwordField.text = "123456"
     return loginView
   }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     view = loginView
-    if UserDefaults.standard.bool(forKey: Keys.isLogged) == true{
-      logIn()
-    } 
   }
   
   @objc func logIn() {

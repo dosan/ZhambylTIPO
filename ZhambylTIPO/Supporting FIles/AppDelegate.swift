@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseMessaging
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func configureMainPage(){
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.makeKeyAndVisible()
-    window?.rootViewController = LogInViewController()
+    Switcher.updateRootVC()
+    if UserDefaults.standard.bool(forKey: Keys.isLogged) == true{
+      login()
+    }
+  }
+  
+  func login() {
+    let conn = APIConnection()
+    conn.logIn(login: UserDefaults.standard.value(forKey: Keys.login) as! String,
+               password: UserDefaults.standard.value(forKey: Keys.password) as! String) { error in
+                guard let _ = error else {
+                  return
+                }
+                UserDefaults.standard.set(false, forKey: Keys.isLogged)
+                Switcher.updateRootVC()
+    }
   }
   
   func customNavBar() {
@@ -26,10 +44,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                         NSAttributedString.Key.font: UIFont(name: Font.regular, size: 20)!]
     UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: Font.regular, size: 20)!], for: .normal)
   }
-
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     configureMainPage()
     customNavBar()
+    FirebaseApp.configure()
+    let notificationTypes : UIUserNotificationType = [UIUserNotificationType.alert, UIUserNotificationType.badge, UIUserNotificationType.sound]
+    let notificationSettings = UIUserNotificationSettings(types: notificationTypes, categories: nil)
+    application.registerForRemoteNotifications()
+    application.registerUserNotificationSettings(notificationSettings)
     return true
   }
 
@@ -53,6 +76,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+  }
+  
+  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+    print(userInfo)
   }
 
 

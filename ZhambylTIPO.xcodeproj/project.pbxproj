@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81EE4DB550F8730309E5579A /* Pods_ZhambylTIPO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA6DEE1961D5B2DCB6C6579 /* Pods_ZhambylTIPO.framework */; };
+		72D8CADAFDE6466D2915CFEB /* Pods_ZhambylTIPO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE0B45E7EC335D909949308 /* Pods_ZhambylTIPO.framework */; };
 		B506882C21FB3B56005017E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506882B21FB3B56005017E6 /* AppDelegate.swift */; };
 		B506883321FB3B57005017E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B506883221FB3B57005017E6 /* Assets.xcassets */; };
 		B506883621FB3B57005017E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506883421FB3B57005017E6 /* LaunchScreen.storyboard */; };
 		B519F21722019A5D009CC6AC /* GradesFooterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519F21622019A5D009CC6AC /* GradesFooterStackView.swift */; };
 		B55C846621FB3CD900388F18 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C846521FB3CD900388F18 /* TabBarController.swift */; };
-		B55C846821FB3EC900388F18 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C846721FB3EC900388F18 /* NewsViewController.swift */; };
+		B55C846821FB3EC900388F18 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C846721FB3EC900388F18 /* EventsViewController.swift */; };
 		B55C846A21FB3ED900388F18 /* SchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C846921FB3ED900388F18 /* SchedulesViewController.swift */; };
 		B55C846C21FB3EE000388F18 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C846B21FB3EE000388F18 /* GradesViewController.swift */; };
 		B56FF19621FEBD5300124766 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56FF19521FEBD5300124766 /* ProfileViewController.swift */; };
 		B57602BB21FCED3A005AEF3B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57602BA21FCED3A005AEF3B /* Connection.swift */; };
+		B585C1B1221C20E000086B35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B585C1B0221C20E000086B35 /* GoogleService-Info.plist */; };
 		B586D91521FEF0840079B9EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586D91421FEF0840079B9EE /* Constants.swift */; };
 		B586D91721FF1E840079B9EE /* Discipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586D91621FF1E840079B9EE /* Discipline.swift */; };
 		B586D91921FF2C410079B9EE /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586D91821FF2C410079B9EE /* Grade.swift */; };
@@ -34,10 +35,12 @@
 		B5D835DE21FE19C200965823 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D835DD21FE19C200965823 /* Exceptions.swift */; };
 		B5D835E021FE25D400965823 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D835DF21FE25D400965823 /* Extensions.swift */; };
 		B5D835E421FE2BD100965823 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D835E321FE2BD100965823 /* User.swift */; };
+		B5E667312216DE5B009A9442 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E667302216DE5B009A9442 /* Switcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8EA6DEE1961D5B2DCB6C6579 /* Pods_ZhambylTIPO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhambylTIPO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		473F139F5395A3796B738AB9 /* Pods-ZhambylTIPO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhambylTIPO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhambylTIPO/Pods-ZhambylTIPO.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1080FA48ADFFC8666D97F9 /* Pods-ZhambylTIPO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhambylTIPO.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhambylTIPO/Pods-ZhambylTIPO.release.xcconfig"; sourceTree = "<group>"; };
 		B506882821FB3B56005017E6 /* ZhambylTIPO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhambylTIPO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B506882B21FB3B56005017E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B506883221FB3B57005017E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,11 +48,13 @@
 		B506883721FB3B57005017E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B519F21622019A5D009CC6AC /* GradesFooterStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesFooterStackView.swift; sourceTree = "<group>"; };
 		B55C846521FB3CD900388F18 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		B55C846721FB3EC900388F18 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		B55C846721FB3EC900388F18 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		B55C846921FB3ED900388F18 /* SchedulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesViewController.swift; sourceTree = "<group>"; };
 		B55C846B21FB3EE000388F18 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		B56FF19521FEBD5300124766 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B57602BA21FCED3A005AEF3B /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		B585C1AF221C205200086B35 /* ZhambylTIPO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZhambylTIPO.entitlements; sourceTree = "<group>"; };
+		B585C1B0221C20E000086B35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B586D91421FEF0840079B9EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B586D91621FF1E840079B9EE /* Discipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discipline.swift; sourceTree = "<group>"; };
 		B586D91821FF2C410079B9EE /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
@@ -66,8 +71,8 @@
 		B5D835DD21FE19C200965823 /* Exceptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		B5D835DF21FE25D400965823 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B5D835E321FE2BD100965823 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		D1C28A43B479C081B92E30B7 /* Pods-ZhambylTIPO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhambylTIPO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhambylTIPO/Pods-ZhambylTIPO.debug.xcconfig"; sourceTree = "<group>"; };
-		F975AA5BCF4A5EDF5A58406A /* Pods-ZhambylTIPO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhambylTIPO.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhambylTIPO/Pods-ZhambylTIPO.release.xcconfig"; sourceTree = "<group>"; };
+		B5E667302216DE5B009A9442 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		FEE0B45E7EC335D909949308 /* Pods_ZhambylTIPO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhambylTIPO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +80,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81EE4DB550F8730309E5579A /* Pods_ZhambylTIPO.framework in Frameworks */,
+				72D8CADAFDE6466D2915CFEB /* Pods_ZhambylTIPO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48DC0C16B53388BA9EACD9DF /* Frameworks */ = {
+		6C0BC3DE7ADC6E9D2974F62F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8EA6DEE1961D5B2DCB6C6579 /* Pods_ZhambylTIPO.framework */,
+				FEE0B45E7EC335D909949308 /* Pods_ZhambylTIPO.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,9 +100,10 @@
 			children = (
 				B506882A21FB3B56005017E6 /* ZhambylTIPO */,
 				B506883721FB3B57005017E6 /* Info.plist */,
+				B585C1B0221C20E000086B35 /* GoogleService-Info.plist */,
 				B506882921FB3B56005017E6 /* Products */,
-				F1C10F7F10530DADEEC2B0C7 /* Pods */,
-				48DC0C16B53388BA9EACD9DF /* Frameworks */,
+				CD93207019C66D2AAFCC7BDC /* Pods */,
+				6C0BC3DE7ADC6E9D2974F62F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,10 +118,7 @@
 		B506882A21FB3B56005017E6 /* ZhambylTIPO */ = {
 			isa = PBXGroup;
 			children = (
-				B57602BA21FCED3A005AEF3B /* Connection.swift */,
-				B5D835DD21FE19C200965823 /* Exceptions.swift */,
-				B5D835DF21FE25D400965823 /* Extensions.swift */,
-				B586D91421FEF0840079B9EE /* Constants.swift */,
+				B585C1AF221C205200086B35 /* ZhambylTIPO.entitlements */,
 				B588AECB21FB698100F9C3DB /* Models */,
 				B588AECA21FB697C00F9C3DB /* Views */,
 				B588AEC921FB696D00F9C3DB /* Controllers */,
@@ -128,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B55C846521FB3CD900388F18 /* TabBarController.swift */,
-				B55C846721FB3EC900388F18 /* NewsViewController.swift */,
+				B55C846721FB3EC900388F18 /* EventsViewController.swift */,
 				B55C846921FB3ED900388F18 /* SchedulesViewController.swift */,
 				B55C846B21FB3EE000388F18 /* GradesViewController.swift */,
 				B588AEC721FB696000F9C3DB /* LogInViewController.swift */,
@@ -167,6 +170,11 @@
 		B5E73B6621FB3C130054274E /* Supporting FIles */ = {
 			isa = PBXGroup;
 			children = (
+				B57602BA21FCED3A005AEF3B /* Connection.swift */,
+				B5D835DD21FE19C200965823 /* Exceptions.swift */,
+				B5D835DF21FE25D400965823 /* Extensions.swift */,
+				B586D91421FEF0840079B9EE /* Constants.swift */,
+				B5E667302216DE5B009A9442 /* Switcher.swift */,
 				B506882B21FB3B56005017E6 /* AppDelegate.swift */,
 				B506883421FB3B57005017E6 /* LaunchScreen.storyboard */,
 				B506883221FB3B57005017E6 /* Assets.xcassets */,
@@ -174,11 +182,11 @@
 			path = "Supporting FIles";
 			sourceTree = "<group>";
 		};
-		F1C10F7F10530DADEEC2B0C7 /* Pods */ = {
+		CD93207019C66D2AAFCC7BDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D1C28A43B479C081B92E30B7 /* Pods-ZhambylTIPO.debug.xcconfig */,
-				F975AA5BCF4A5EDF5A58406A /* Pods-ZhambylTIPO.release.xcconfig */,
+				473F139F5395A3796B738AB9 /* Pods-ZhambylTIPO.debug.xcconfig */,
+				9A1080FA48ADFFC8666D97F9 /* Pods-ZhambylTIPO.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -190,11 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B506883A21FB3B57005017E6 /* Build configuration list for PBXNativeTarget "ZhambylTIPO" */;
 			buildPhases = (
-				175B85BDB4A5265C521EA616 /* [CP] Check Pods Manifest.lock */,
+				6706887857CBB415E1EC2318 /* [CP] Check Pods Manifest.lock */,
 				B506882421FB3B56005017E6 /* Sources */,
 				B506882521FB3B56005017E6 /* Frameworks */,
 				B506882621FB3B56005017E6 /* Resources */,
-				D4BDD413F9E82FC70EA21BA5 /* [CP] Embed Pods Frameworks */,
+				E2BFD17883475775FA3DCD43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +227,9 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -250,13 +261,14 @@
 			files = (
 				B506883621FB3B57005017E6 /* LaunchScreen.storyboard in Resources */,
 				B506883321FB3B57005017E6 /* Assets.xcassets in Resources */,
+				B585C1B1221C20E000086B35 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		175B85BDB4A5265C521EA616 /* [CP] Check Pods Manifest.lock */ = {
+		6706887857CBB415E1EC2318 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,7 +286,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4BDD413F9E82FC70EA21BA5 /* [CP] Embed Pods Frameworks */ = {
+		E2BFD17883475775FA3DCD43 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,14 +296,20 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,12 +338,13 @@
 				B586D91921FF2C410079B9EE /* Grade.swift in Sources */,
 				B5BE049F22035564009631A1 /* SubtitlesStackView.swift in Sources */,
 				B5BE04992203036C009631A1 /* Event.swift in Sources */,
+				B5E667312216DE5B009A9442 /* Switcher.swift in Sources */,
 				B588AEC821FB696000F9C3DB /* LogInViewController.swift in Sources */,
 				B599ADAB21FF54E400A1B6EB /* DisciplineTableViewCell.swift in Sources */,
 				B55C846A21FB3ED900388F18 /* SchedulesViewController.swift in Sources */,
 				B5D835E421FE2BD100965823 /* User.swift in Sources */,
 				B506882C21FB3B56005017E6 /* AppDelegate.swift in Sources */,
-				B55C846821FB3EC900388F18 /* NewsViewController.swift in Sources */,
+				B55C846821FB3EC900388F18 /* EventsViewController.swift in Sources */,
 				B519F21722019A5D009CC6AC /* GradesFooterStackView.swift in Sources */,
 				B5B156D12209616B00370765 /* GradeCollectionViewCell.swift in Sources */,
 				B586D91721FF1E840079B9EE /* Discipline.swift in Sources */,
@@ -464,9 +483,10 @@
 		};
 		B506883B21FB3B57005017E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1C28A43B479C081B92E30B7 /* Pods-ZhambylTIPO.debug.xcconfig */;
+			baseConfigurationReference = 473F139F5395A3796B738AB9 /* Pods-ZhambylTIPO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZhambylTIPO/ZhambylTIPO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F9R52PYR5A;
@@ -486,9 +506,10 @@
 		};
 		B506883C21FB3B57005017E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F975AA5BCF4A5EDF5A58406A /* Pods-ZhambylTIPO.release.xcconfig */;
+			baseConfigurationReference = 9A1080FA48ADFFC8666D97F9 /* Pods-ZhambylTIPO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZhambylTIPO/ZhambylTIPO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F9R52PYR5A;

@@ -15,7 +15,7 @@ class TabBarController: UITabBarController {
                         ["title": "Оценки", "imageName": "grades"],
                         ["title": "Профиль", "imageName": "profile"]]
   
-  let controllers = [NewsViewController(), SchedulesViewController(), GradesViewController(), ProfileViewController()]
+  let controllers = [EventsViewController(), SchedulesViewController(), GradesViewController(), ProfileViewController()]
   var tabBarVC: [UINavigationController] = []
   
   override func viewDidLoad() {

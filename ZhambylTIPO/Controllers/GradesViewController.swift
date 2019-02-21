@@ -53,7 +53,9 @@ class GradesViewController: UIViewController {
         return
       }
       self.disciplines = disciplines
-      self.setData(discipline: disciplines[0])
+      if disciplines.count > 0 {
+        self.setData(discipline: disciplines[0])
+      }
     }
   }
   
@@ -65,7 +67,7 @@ class GradesViewController: UIViewController {
         return
       }
       self.grades = grades
-      if let disciplines = self.disciplines {
+      if let disciplines = self.disciplines, self.disciplines.count > 0 {
         self.setData(discipline: disciplines[0])
       }
     }
@@ -97,7 +99,7 @@ class GradesViewController: UIViewController {
   }
   
   @objc func selectDiscipline() {
-    if let disciplines = self.disciplines {
+    if let disciplines = self.disciplines, self.disciplines.count > 0 {
       setData(discipline: disciplines[pickerView.selectedRow(inComponent: 0)])
     }
     cancelPicker()

@@ -19,7 +19,6 @@ class ProfileViewController: UIViewController {
     tableView.dataSource = self
     tableView.tableFooterView = UIView()
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-    tableView.isScrollEnabled = false
     tableView.allowsSelection = false
     return tableView
   }()
@@ -49,12 +48,11 @@ class ProfileViewController: UIViewController {
     let alert = UIAlertController(title: "", message: "Вы действительно хотите выйти?", preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Выйти", style: .destructive, handler: { action in
       UserDefaults.standard.set(false, forKey: Keys.isLogged)
-      self.tabBarController?.dismiss(animated: true, completion: nil)
+      Switcher.updateRootVC()
     }))
     alert.addAction(UIAlertAction(title: "Отменить", style: UIAlertAction.Style.cancel, handler: nil))
     self.present(alert, animated: true, completion: nil)
   }
-  
   
 }
 
@@ -68,6 +66,7 @@ extension ProfileViewController: UITableViewDataSource {
     cell.textLabel?.font = UIFont(name: Font.regular, size: 10)
     cell.detailTextLabel?.font = UIFont(name: Font.regular, size: 20)
     cell.detailTextLabel?.adjustsFontSizeToFitWidth = true
+    cell.detailTextLabel?.numberOfLines = 2
     
     var text = ""
     var detailText = ""
@@ -107,17 +106,14 @@ extension ProfileViewController: UITableViewDataSource {
 }
 
 extension ProfileViewController: UITableViewDelegate {
-  
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 55.heightProportion()
-  }
-  
+
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return 125.heightProportion()
+    return 150.heightProportion()
   }
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let header = UIView()
+    header.backgroundColor = .white
     let imageView = UIImageView()
     imageView.contentMode = .scaleAspectFit
     imageView.image = UIImage(named: "avatar2")
@@ -130,7 +126,7 @@ extension ProfileViewController: UITableViewDelegate {
     }
     header.addSubview(imageView)
     imageView.easy.layout(Center(0),
-                          Size(120.heightProportion()))
+                          Size(135.heightProportion()))
     return header
   }
   

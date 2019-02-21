@@ -10,5 +10,7 @@ target 'ZhambylTIPO' do
     pod 'Alamofire'
     pod 'ObjectMapper'
     pod 'FSCalendar'
+    pod 'Firebase'
+    pod 'Firebase/Messaging'
 
 end
